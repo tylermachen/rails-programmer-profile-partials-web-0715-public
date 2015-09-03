@@ -15,4 +15,8 @@
        <%= render attribute, { programmer: @programmer, attribute: attribute } %>
     <% end %>
   </div>
+
+  <p>
+    <%= link_to "Learn more about #{@programmer.name}", @programmer.wikipedia_page, target: '_blank' %>
+  </p>
 </div>
